@@ -1,0 +1,4 @@
+user_token.json
+__pycache__
+.vscode
+*.env

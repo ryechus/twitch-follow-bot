@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "twitch-follow-bot"
+version = "0.1.0"
+description = ""
+authors = ["Mike Hardin <mhardinla@gmail.com>"]
+license = "MIT"
+# readme = "README.md"
+packages = [
+    { include = "twitch_follow_bot", from = "src" },
+    { include = "pyslobs" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+twitchAPI = "^4.2.0"
+websocket-client = "^1.8.0"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+black = "^24.4.2"
+ipython = "^8.24.0"
+ipdb = "^0.13.13"
+pytest = "^8.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
